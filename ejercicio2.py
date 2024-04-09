@@ -14,6 +14,10 @@ class Perro(Animal):
         return "¡Guau!"
 
 class Gato(Animal):
+    def __init__(self, nombre):
+        super().__init__(nombre)
+
     def hacer_sonido(self):
         # Devuelve el sonido de un gato (maullido)
         self.maullido = "¡Miau!"
+        return self.maullido
